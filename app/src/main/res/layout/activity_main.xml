@@ -8,34 +8,59 @@
 
     <TextView
         android:id="@+id/dice_value"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="164dp"
-        android:layout_marginLeft="164dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="78dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="24dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/dice_button"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.856" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/dice_button"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="120dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="405dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="281dp"
-        android:background="@color/colorPrimary"
-        android:text="Button"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/nb_faces"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="saisir un nombre"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <Button
+            android:id="@+id/dice_button"
+            android:layout_width="413dp"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
 
 
 </android.support.constraint.ConstraintLayout>
